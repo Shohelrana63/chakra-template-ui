@@ -15,10 +15,10 @@ const Banner = () => {
             <Box d="flex" alignItems="center" justifyContent="space-between" ml={6} mr={6}>
                <Image boxSize="90px"  src={brandLogo} alt="brand"/>
                 <Box>
-                    <Button pr={10} color="green" fontSize="md" variant="link">
+                    <Button pr={10} color="teal.400" fontWeight="bold" fontSize="lg" variant="link">
                         login
                     </Button>
-                    <Button color="green" fontSize="md" variant="link">
+                    <Button color="teal.400" fontWeight="bold" fontSize="lg" variant="link">
                         signUp
                     </Button>
                 </Box>

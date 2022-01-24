@@ -1,5 +1,6 @@
 import Banner from './components/Banner';
 import Connected from './components/Connected';
+import Footer from './components/Footer';
 import Upcoming from './components/UpComing';
 import Works from './components/Works';
 
@@ -10,6 +11,7 @@ function App() {
       <Works/>
       <Upcoming/>
       <Connected/>
+      <Footer/>
     </div>  
   );
 }

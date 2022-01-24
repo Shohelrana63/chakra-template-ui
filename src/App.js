@@ -1,4 +1,5 @@
 import Banner from './components/Banner';
+import Upcoming from './components/UpComing';
 import Works from './components/Works';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div>
       <Banner/>
       <Works/>
+      <Upcoming/>
     </div>  
   );
 }

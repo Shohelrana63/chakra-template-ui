@@ -1,4 +1,5 @@
 import Banner from './components/Banner';
+import Connected from './components/Connected';
 import Upcoming from './components/UpComing';
 import Works from './components/Works';
 
@@ -8,6 +9,7 @@ function App() {
       <Banner/>
       <Works/>
       <Upcoming/>
+      <Connected/>
     </div>  
   );
 }

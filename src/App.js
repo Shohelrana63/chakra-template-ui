@@ -1,12 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-import { Box, Text } from '@chakra-ui/react';
 import Banner from './components/Banner';
+import Works from './components/Works';
 
 function App() {
   return (
     <div>
       <Banner/>
+      <Works/>
     </div>  
   );
 }

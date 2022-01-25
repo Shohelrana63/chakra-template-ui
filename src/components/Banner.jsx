@@ -1,5 +1,5 @@
 import { Box, Image } from '@chakra-ui/core';
-import { Badge, Button, Container, FormControl, Grid, Heading, Input } from '@chakra-ui/react';
+import { Badge, Button, Container, FormControl, Grid, Heading, IconButton, Input, useColorMode } from '@chakra-ui/react';
 import React from 'react';
 import brandLogo from '../assets/brandLogo.svg';
 import banner from '../assets/banner.svg';
@@ -7,20 +7,30 @@ import imgOne from '../assets/imgOne.jpg';
 import imgTwo from '../assets/imgTwo.jpg';
 import imgThree from '../assets/imgThree.jpg';
 import rightArrow from '../assets/rightArrow.jpg';
-import { EmailIcon, SearchIcon } from '@chakra-ui/icons'
+import { EmailIcon, MoonIcon, SearchIcon } from '@chakra-ui/icons';
+
 const Banner = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
     return (
         <>
         <header>
             <Box d="flex" alignItems="center" justifyContent="space-between" ml={6} mr={6}>
                <Image boxSize="90px"  src={brandLogo} alt="brand"/>
                 <Box>
-                    <Button pr={10} color="teal.400" fontWeight="bold" fontSize="lg" variant="link">
+                    <Button mr={10} color="teal.400" fontWeight="bold" fontSize="lg" variant="link">
                         login
                     </Button>
-                    <Button color="teal.400" fontWeight="bold" fontSize="lg" variant="link">
+                    <Button mr={10} color="teal.400" fontWeight="bold" fontSize="lg" variant="link">
                         signUp
                     </Button>
+                    <IconButton
+                        onClick={toggleColorMode}
+                        size="lg"
+                        isRound="true"
+                        colorScheme='teal'
+                        color="dark"
+                        icon={<MoonIcon />}
+                    />
                 </Box>
             </Box>
             </header>

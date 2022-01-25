@@ -26,7 +26,13 @@ const Upcoming = () => {
           </Box>
         </Box>
         <Grid
-          templateColumns="repeat(4, 1fr)"
+          templateColumns={{ 
+            sm: 'repeat(2, 1fr)',
+            md: 'repeat(3, 1fr)',
+            lg: 'repeat(3, 1fr)',
+            xl: 'repeat(4, 1fr)',
+            base: 'repeat(1, 1fr)',
+          }}
           gap={6}
         >
           {/* grid box */}

@@ -18,7 +18,11 @@ function Connected() {
         >
           <Box
             display={{
+              sm: 'none',
+              md: 'block',
               lg: 'block',
+              xl: 'block',
+              base: 'none',
             }}
           >
             <Image w="260px" src={deviceLeft}></Image>
@@ -28,14 +32,18 @@ function Connected() {
             <Heading as="h6" size="md" my="7">
               Stay connected. <br /> Download the app.
             </Heading>
-            <Box d="flex">
+            <Box d="flex" align="center">
               <Image w="180px" p="5" src={androidApp}></Image>
               <Image w="180px" p="5" src={iosApp}></Image>
             </Box>
           </Box>
           <Box
             display={{
+              sm: 'none',
+              md: 'block',
               lg: 'block',
+              xl: 'block',
+              base: 'none',
             }}
           >
             <Image w="260px" right="0" src={deviceRight}></Image>

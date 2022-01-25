@@ -27,7 +27,13 @@ const Banner = () => {
             {/* Banner description */}
             <Box>
                 <Container maxW="container.lg">
-                <Box d="flex" alignItems="center" py={20} flexDirection="row">
+                <Box d="flex" alignItems="center" py={20} flexDirection={{
+                  sm: 'column',
+                  md: 'row',
+                  lg: 'row',
+                  xl: 'row',
+                  base: 'column',
+                }}>
                     <Box mr={6}>
                         <Heading as="h1" size="2xl">
                             <Box fontWeight="black">
@@ -49,7 +55,13 @@ const Banner = () => {
 
             {/* three pictures */}
             <Container maxW="container.lg" mt={10}>
-                <Grid templateColumns="repeat(3,1fr)" gap={6}>
+                <Grid templateColumns={{
+                  sm: 'repeat(2, 1fr)',
+                  md: 'repeat(3, 1fr)',
+                  lg: 'repeat(3, 1fr)',
+                  xl: 'repeat(3, 1fr)',
+                  base: 'repeat(1, 1fr)',
+                }} gap={6}>
                   <Box>
                       <Image w="100%" src={imgOne} alt="img" />
                       <Button colorScheme="teal" variant="link" mt="5">
